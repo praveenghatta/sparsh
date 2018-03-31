@@ -7,6 +7,10 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { FiltersComponent } from './filters/filters.component';
 import { SparshbodyComponent } from './sparshbody/sparshbody.component';
+import { LoginComponent } from './header/login/login.component';
+import { MenuComponent } from './header/menu/menu.component';
+import {MegaMenuModule} from 'primeng/megamenu';
+import { SearchComponent } from './header/search/search.component';
 
 @NgModule({
   declarations: [
@@ -14,10 +18,15 @@ import { SparshbodyComponent } from './sparshbody/sparshbody.component';
     HeaderComponent,
     FooterComponent,
     FiltersComponent,
-    SparshbodyComponent
+    SparshbodyComponent,
+    LoginComponent,
+    MenuComponent,
+    SearchComponent,
+
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    MegaMenuModule
   ],
   providers: [],
   bootstrap: [AppComponent]
